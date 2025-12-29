@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SynthID Remover for AI Images | Erase Invisible Marks | Removesynthid</title>
+    <meta name="description" content="Remove invisible Synth ID watermarks from AI-generated images. The Image Synth ID Remover detects and removes hidden identifiers while preserving original photo quality.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- SEO Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Removesynthid",
+      "description": "Remove invisible Synth ID watermarks from AI-generated images. The Image Synth ID Remover detects and removes hidden identifiers while preserving original photo quality.",
+      "applicationCategory": "DesignApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "mainEntity": {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the SynthID Remover?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The SynthID Remover is a specialized AI image effect. It's designed to analyze an uploaded photo, detect the presence of a SynthID digital watermark, and apply a transformation to effectively remove it, restoring the image's appearance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much time does it take to remove SynthID from an image?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The processing time depends on the size and complexity of the image you upload. However, our platform is optimized for performance and typically provides a faster output compared to our competitors."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the SynthID Remover tool free to use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, it is! To get started, you just need to sign up for a free account on our website. Upon registration, we will provide you with free credits that you can use to process your images with this tool."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you handle the privacy of my uploaded images?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Your privacy is our top priority. We use secure protocols for all uploads and processing. Your images are never shared or used for any other purpose and are automatically deleted from our servers after a short period."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What file formats can I upload?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our tool supports all major image formats, including JPEG, PNG, and WEBP. For the best results, we recommend uploading a high-resolution image."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will using the remover affect my image quality?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our AI is trained to remove the watermark while preserving the original image quality as much as possible. The tool intelligently reconstructs the pixels affected by the watermark, ensuring a clean and high-quality result."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use this tool on my mobile device?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. Our website and tools are fully responsive and designed to work seamlessly across all devices, including desktops, tablets, and mobile phones. You can upload and process images on the go."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens when I run out of free credits?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Once you've used your initial free credits, we offer various affordable plans to purchase more. This allows you to continue using the SynthID Remover and our other AI tools without interruption."
+            }
+          }
+        ]
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary);">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+            Removesynthid
+        </div>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#how-to-use">How it Works</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#features">Features</a>
+            <a href="#faq">FAQ</a>
+            <a href="#playground" class="btn btn-nav">Launch App</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-bg-image">
+                <img src="images/hero-bg.jpg" alt="Abstract dark cyberspace background with neon grid" loading="eager">
+            </div>
+            <div class="hero-bg-animation">
+                <!-- Grid Scanner Animation handled by CSS -->
+                <div class="scan-line"></div>
+            </div>
+            <div class="hero-content">
+                <h1>SynthID Remover for AI Images | Erase Invisible Marks</h1>
+                <p>Our SynthID remover tool detects and erases invisible watermarks from your AI images without sacrificing quality. Keep your visuals clean and untraceable.</p>
+                <a href="#playground" class="btn btn-primary">Try It Now</a>
+            </div>
+        </section>
+
+        <!-- Playground Section (LOCKED) -->
+        <section id="playground">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Effect Lab</h2>
+                    <p>Advanced Forensic Tools</p>
+                </div>
+                
+                <div class="locked-zone">
+                    <div class="locked-content">
+                        <svg class="lock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                        <h3>EFFECT LAB LOCKED</h3>
+                        <p>The 'SynthID Remover' effect is under development.</p>
+                        <div class="progress-container">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <span class="progress-text">System initialization: 85%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-to-use">
+            <div class="container">
+                <div class="section-header">
+                    <h2>How SynthID Remover Works?</h2>
+                    <p>Three simple steps to clean images</p>
+                </div>
+                <div class="steps-grid">
+                    <!-- Step 1 -->
+                    <div class="step-card fade-in-up">
+                        <div class="step-number">01</div>
+                        <h3>Upload Photo</h3>
+                        <p>Select & Upload photos from your device to apply SynthID Remover, and make sure uploaded photos must be in high quality with a well-lit background.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="step-card fade-in-up">
+                        <div class="step-number">02</div>
+                        <h3>Apply SynthID Remover</h3>
+                        <p>After the photo is uploaded click on the “Apply Image Effect” button to apply SynthID Remover to your photo.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="step-card fade-in-up">
+                        <div class="step-number">03</div>
+                        <h3>Download & Share</h3>
+                        <p>Download your generated photo to your device and share it on your favorite social media platform, and with your friends and family.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Visual Results</h2>
+                    <p>Processed Evidence</p>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item fade-in-up">
+                        <img src="images/gallery-result-1.jpg" alt="Cyborg woman portrait with clean details" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span>Restored</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in-up">
+                        <img src="images/gallery-result-2.jpg" alt="Futuristic city landscape at night" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span>Cleaned</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in-up">
+                        <img src="images/gallery-result-3.jpg" alt="Abstract 3D geometric shape" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span>Verified</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Use / Features Section -->
+        <section id="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why Choose Our SynthID Remover?</h2>
+                    <p>Advanced capabilities for digital forensics</p>
+                </div>
+                <div class="grid-4">
+                    <div class="feature-card fade-in-up">
+                        <div class="icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
+                        <h3>Free to Use</h3>
+                        <p>Access all features at no cost. No hidden fees — just unlimited creativity with zero restrictions.</p>
+                    </div>
+                    <div class="feature-card fade-in-up">
+                        <div class="icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        </div>
+                        <h3>Secure SynthID Remover</h3>
+                        <p>Your privacy is our top priority. Every image is processed safely, ensuring your data remains confidential and is never shared with third parties.</p>
+                    </div>
+                    <div class="feature-card fade-in-up">
+                        <div class="icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        </div>
+                        <h3>User-Friendly Interface</h3>
+                        <p>Our simple, intuitive design makes the SynthID Remover tool easy for everyone, even those without technical experience.</p>
+                    </div>
+                    <div class="feature-card fade-in-up">
+                        <div class="icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                        </div>
+                        <h3>Instant Results</h3>
+                        <p>Upload your photo and get SynthID Remover style visuals within seconds. No editing or design skills are needed — the AI handles everything.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What People Say about us</h2>
+                    <p>Field Reports</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card fade-in-up">
+                        <p class="quote">"I was skeptical at first, but this tool works perfectly. It’s now a key part of my workflow."</p>
+                        <div class="author">
+                            <span class="name">Liam</span>
+                            <span class="role">Digital Artist</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card fade-in-up">
+                        <p class="quote">"Honestly a lifesaver for my projects. Max Studio really delivered a simple and effective tool."</p>
+                        <div class="author">
+                            <span class="name">Sophia</span>
+                            <span class="role">Content Creator</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card fade-in-up">
+                        <p class="quote">"Works like a charm every time. It's super easy to use, even for someone who isn't a tech expert."</p>
+                        <div class="author">
+                            <span class="name">James</span>
+                            <span class="role">Web user from USA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>System Intel</p>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">What is the SynthID Remover?</button>
+                        <div class="faq-answer"><p>The SynthID Remover is a specialized AI image effect. It's designed to analyze an uploaded photo, detect the presence of a SynthID digital watermark, and apply a transformation to effectively remove it, restoring the image's appearance.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">How much time does it take to remove SynthID from an image?</button>
+                        <div class="faq-answer"><p>The processing time depends on the size and complexity of the image you upload. However, our platform is optimized for performance and typically provides a faster output compared to our competitors.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Is the SynthID Remover tool free to use?</button>
+                        <div class="faq-answer"><p>Yes, it is! To get started, you just need to sign up for a free account on our website. Upon registration, we will provide you with free credits that you can use to process your images with this tool.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">How do you handle the privacy of my uploaded images?</button>
+                        <div class="faq-answer"><p>Your privacy is our top priority. We use secure protocols for all uploads and processing. Your images are never shared or used for any other purpose and are automatically deleted from our servers after a short period.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What file formats can I upload?</button>
+                        <div class="faq-answer"><p>Our tool supports all major image formats, including JPEG, PNG, and WEBP. For the best results, we recommend uploading a high-resolution image.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Will using the remover affect my image quality?</button>
+                        <div class="faq-answer"><p>Our AI is trained to remove the watermark while preserving the original image quality as much as possible. The tool intelligently reconstructs the pixels affected by the watermark, ensuring a clean and high-quality result.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Can I use this tool on my mobile device?</button>
+                        <div class="faq-answer"><p>Absolutely. Our website and tools are fully responsive and designed to work seamlessly across all devices, including desktops, tablets, and mobile phones. You can upload and process images on the go.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What happens when I run out of free credits?</button>
+                        <div class="faq-answer"><p>Once you've used your initial free credits, we offer various affordable plans to purchase more. This allows you to continue using the SynthID Remover and our other AI tools without interruption.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">Removesynthid</div>
+                    <p>&copy; 2024 Removesynthid. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <button data-modal-target="privacy">Privacy Policy</button>
+                    <button data-modal-target="terms">Terms of Service</button>
+                    <a href="mailto:support@removesynthid.com">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="privacy-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal" data-modal-close="privacy">&times;</span>
+            <div class="modal-body">
+                <h2>Privacy Policy</h2>
+                <p><strong>Last Updated:</strong> 2024</p>
+
+                <h4>1. Data Collection</h4>
+                <p>We collect only the minimum data necessary:</p>
+                <ul>
+                  <li>Images you upload for processing (temporarily stored)</li>
+                  <li>Basic usage analytics (non-personal)</li>
+                  <li>Browser type and device information</li>
+                </ul>
+
+                <h4>2. Image Processing</h4>
+                <p>Your uploaded images are:</p>
+                <ul>
+                  <li>Processed securely on our servers</li>
+                  <li>Automatically deleted within 24 hours</li>
+                  <li>Never shared with third parties</li>
+                  <li>Not used for AI training without consent</li>
+                </ul>
+
+                <h4>3. Data Security</h4>
+                <p>All data transmission is encrypted using SSL/TLS protocols.</p>
+
+                <h4>4. Cookies</h4>
+                <p>We use essential cookies only for site functionality.</p>
+
+                <h4>5. Your Rights</h4>
+                <p>You have the right to request deletion of any stored data.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="terms-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal" data-modal-close="terms">&times;</span>
+            <div class="modal-body">
+                <h2>Terms of Service</h2>
+                <p><strong>Last Updated:</strong> 2024</p>
+
+                <h4>1. Acceptance of Terms</h4>
+                <p>By using this service, you agree to these Terms.</p>
+
+                <h4>2. Service Description</h4>
+                <p>This service provides AI-powered image transformation. Provided "as-is" without warranties.</p>
+
+                <h4>3. Acceptable Use</h4>
+                <p>You agree NOT to upload:</p>
+                <ul>
+                  <li>Illegal or unlawful content</li>
+                  <li>Explicit, pornographic, or obscene material</li>
+                  <li>Content depicting violence or harm</li>
+                  <li>Images you do not have rights to use</li>
+                </ul>
+
+                <h4>4. Intellectual Property</h4>
+                <p>You retain full ownership of your original images. Generated effects are royalty-free for personal and commercial use.</p>
+
+                <h4>5. Limitation of Liability</h4>
+                <p>We are not liable for any damages arising from the use of this service.</p>
+
+                <h4>6. Modifications</h4>
+                <p>We may update these terms at any time. Continued use constitutes acceptance.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
